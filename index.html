@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 610406026 GI226 吳翊豪 GameProgramming </title>
+
+		<style type="text/css">
+			table.tftable {font-size:12px;color:#fbfbfb;width:100%;border-width: 1px;border-color: #686767;border-collapse: collapse;}
+			table.tftable th {font-size:20px;background-color:#171515;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;text-align:left;}
+			table.tftable tr {background-color:#ffffff;}
+			table.tftable td {font-size:20px;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;}
+			a {color: #000000;}
+			p {font-size: 28px;}
+		</style>
+
+		<script type="text/javascript">
+			window.onload=function() {
+				var tfrow = document.getElementById('tfhover').rows.length;
+				var tbRow=[];
+				for (var i = 1; i < tfrow; i++) {
+					tbRow[i] = document.getElementById('tfhover').rows[i];
+					tbRow[i].onmouseover = function(){
+					  this.style.backgroundColor = '#171515';
+					};
+					tbRow[i].onmouseout = function() {
+					  this.style.backgroundColor = '#ffffff';
+					};
+				}
+			};
+		</script>
+
+	<body>
+		<p align="center">GI226 吳翊豪 GameProgramming </p>
+
+		<table id="tfhover" class="tftable" border="1">
+			<tr><td width="20%"><a href="http://MomoWu910.github.io/gameProgramming/HW1"><img src="hw1.gif" width="300"  height="300"></a></a></td>
+			<td width="80%"><a href="http://MomoWu910.github.io/gameProgramming/HW1">HW0</a></td></tr>
+			
+		</table>
+		
+	</body>
+</html>
